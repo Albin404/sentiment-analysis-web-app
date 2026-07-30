@@ -1,0 +1,39 @@
+review,sentiment
+"This is a good product with excellent quality",positive
+"I love this excellent and useful product",positive
+"Great service and a very good experience",positive
+"The product is amazing, good, and reliable",positive
+"Excellent quality, fast delivery, and great support",positive
+"I am very happy because this product is good",positive
+"Wonderful product with excellent performance",positive
+"The app is good, simple, and very useful",positive
+"Fantastic quality and great value for money",positive
+"I strongly recommend this excellent product",positive
+"It is good",positive
+"This product is good",positive
+"It is very good",positive
+"I think it is good",positive
+"This is good and I like it",positive
+"This is a bad product with poor quality",negative
+"I hate this terrible and unreliable product",negative
+"Bad service and a very poor experience",negative
+"The product is awful, bad, and disappointing",negative
+"Poor quality, late delivery, and terrible support",negative
+"I am unhappy because this product is bad",negative
+"Terrible product with poor performance",negative
+"The app is bad, slow, and difficult to use",negative
+"Awful quality and poor value for money",negative
+"I regret buying this terrible product",negative
+"This product is not good",negative
+"It is not good and I am disappointed",negative
+"The quality is not good at all",negative
+"This is an average product with standard quality",neutral
+"The product is ordinary and works as described",neutral
+"Average service with a standard experience",neutral
+"The product has normal features and standard performance",neutral
+"It arrived in regular packaging on Monday",neutral
+"I have no strong opinion about this product",neutral
+"The item is okay for normal daily use",neutral
+"The app has basic and standard features",neutral
+"The price is average compared with other products",neutral
+"This product is neither good nor bad",neutral
