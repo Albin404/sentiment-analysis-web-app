@@ -1,0 +1,5 @@
+{
+  "selected_model": "Multinomial Naive Bayes",
+  "accuracy": 87.5,
+  "weighted_f1": 86.31
+}

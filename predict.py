@@ -1,4 +1,5 @@
 """Use the saved model to predict sentiment for a new review."""
+import json
 from pathlib import Path
 import joblib
 
@@ -23,6 +24,24 @@ def predict_sentiment(review: str) -> str:
     cleaned_review = preprocess_text(review)
     features = vectorizer.transform([cleaned_review])
     return model.predict(features)[0]
+
+
+def predict_with_confidence(review: str) -> tuple[str, float]:
+    """Return the predicted label and its probability percentage."""
+    model, vectorizer = load_artifacts()
+    cleaned_review = preprocess_text(review)
+    features = vectorizer.transform([cleaned_review])
+    probabilities = model.predict_proba(features)[0]
+    best_index = probabilities.argmax()
+    return model.classes_[best_index], float(probabilities[best_index] * 100)
+
+
+def get_model_info() -> dict:
+    """Return saved evaluation details for display in the web app."""
+    info_path = MODEL_DIR / "model_info.json"
+    if not info_path.exists():
+        return {"selected_model": "Saved ML model", "accuracy": None, "weighted_f1": None}
+    return json.loads(info_path.read_text(encoding="utf-8"))
 
 
 if __name__ == "__main__":

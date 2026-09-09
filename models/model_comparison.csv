@@ -1,0 +1,3 @@
+model,accuracy,weighted_f1
+Multinomial Naive Bayes,0.875,0.863095238095238
+Logistic Regression,0.875,0.863095238095238
